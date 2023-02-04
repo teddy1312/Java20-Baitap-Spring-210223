@@ -34,7 +34,7 @@ public class StudentController {
     }
 
     @PutMapping("")
-    public ResponseEntity<?> RequestBody(@RequestBody StudentModel student){
+    public ResponseEntity<?> requestBody(@RequestBody StudentModel student){
         studentList.add(student);
 
         return new ResponseEntity<>(studentList, HttpStatus.OK);
